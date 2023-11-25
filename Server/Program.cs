@@ -4,6 +4,7 @@ using AuditApp.Server.Database.Repositories;
 using AuditApp.Server.Objects;
 using AuditApp.Server.Services;
 using AuditApp.Shared.Models.Repositories;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 
 namespace AuditApp
@@ -60,6 +61,7 @@ namespace AuditApp
 
             app.MapRazorPages();
             app.MapControllers();
+            app.UseCors();
             app.MapFallbackToFile("index.html");
 
             app.Run();
