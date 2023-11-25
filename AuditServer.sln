@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuditApp.Server", "Server\AuditApp.Server.csproj", "{4C0F9A21-5316-44A1-AC8C-C5C734DDCB36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuditApp.Shared", "Shared\AuditApp.Shared.csproj", "{2BCD6557-90AC-4CC5-B4A1-D211E193923A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C0F9A21-5316-44A1-AC8C-C5C734DDCB36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0F9A21-5316-44A1-AC8C-C5C734DDCB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0F9A21-5316-44A1-AC8C-C5C734DDCB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0F9A21-5316-44A1-AC8C-C5C734DDCB36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BCD6557-90AC-4CC5-B4A1-D211E193923A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BCD6557-90AC-4CC5-B4A1-D211E193923A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BCD6557-90AC-4CC5-B4A1-D211E193923A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BCD6557-90AC-4CC5-B4A1-D211E193923A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE73F7EB-EC22-44CA-9EC2-A199A9F83BBB}
+	EndGlobalSection
+EndGlobal
