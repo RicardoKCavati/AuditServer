@@ -3,6 +3,7 @@ using AuditApp.Server.Services;
 using AuditApp.Shared.Models;
 using AuditApp.Shared.Models.Business;
 using AuditApp.Shared.Models.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuditApp.Server.Controllers
@@ -63,6 +64,7 @@ namespace AuditApp.Server.Controllers
 
         [HttpPost]
         [Route("register")]
+        [AllowAnonymous]
         public ActionResult Register(UserRegister register)
         {
             try
