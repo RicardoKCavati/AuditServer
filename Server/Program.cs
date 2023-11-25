@@ -61,7 +61,7 @@ namespace AuditApp
 
             app.MapRazorPages();
             app.MapControllers();
-            app.UseCors();
+            app.UseCors(option => option.SetIsOriginAllowed(o => o.Equals("https://auditoriasistemasinfo.azurewebsites.net")));
             app.MapFallbackToFile("index.html");
 
             app.Run();
