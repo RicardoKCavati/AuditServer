@@ -5,6 +5,7 @@ using AuditApp.Server.Objects;
 using AuditApp.Server.Services;
 using AuditApp.Shared.Models.Repositories;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace AuditApp
@@ -61,7 +62,7 @@ namespace AuditApp
 
             app.MapRazorPages();
             app.MapControllers();
-            app.UseCors(option => option.SetIsOriginAllowed(o => o.Equals("https://auditoriasistemasinfo.azurewebsites.net")));
+            app.UseCors(option => option.SetIsOriginAllowed(o => o.Equals("https://auditoriasistemasinfo.azurewebsites.net")).AllowAnyMethod().AllowAnyHeader());
             app.MapFallbackToFile("index.html");
 
             app.Run();
